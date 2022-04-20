@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Info } from './info';
+import { Address } from './address';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Info />
+      <br/>
+      <Address friend={{name:"홍길동", sex:"남자", email:"wewe@gmail.com"}}/>
+      <br/>
+      <Address friend={{name:"황진이", sex:"여자", email:"vffs@daum.com"}}/>
+      <br/>
+      <Address friend={{name:"코끼리", sex:"남자", email:"fivn@naver.com"}}/>
     </div>
   );
 }
